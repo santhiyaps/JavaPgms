@@ -1,3 +1,5 @@
+
+
 public class OddCount {
     public static int oddCount(int n){
 

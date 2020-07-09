@@ -1,8 +1,14 @@
-import java.io.*;
-import java.util.*;
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 interface PerformOperation {
     boolean check(int a);
 }
+
 class MyMath {
     public static boolean checker(PerformOperation p, int num) {
         return p.check(num);
@@ -20,6 +26,7 @@ class MyMath {
         return (int a) -> Integer.toString(a).equals(new StringBuilder(Integer.toString(a)).reverse().toString());
     }
 }
+
 public class Solut {
 
     public static void main(String[] args) throws IOException {

@@ -1,3 +1,5 @@
+
+
 public class Sqrt {
     public static int nearestSq(final int n){
         int num=0;

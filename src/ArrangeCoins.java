@@ -1,3 +1,5 @@
+
+
 public class ArrangeCoins {
     public int arrangeCoins(int n) {
         int num=n;

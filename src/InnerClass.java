@@ -1,8 +1,8 @@
-import java.io.*;
-import java.lang.reflect.*;
-import java.util.*;
-import java.util.regex.*;
-import java.security.*;
+
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.security.Permission;
 
 
 public class InnerClass {
@@ -14,7 +14,7 @@ public class InnerClass {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             int num = Integer.parseInt(br.readLine().trim());
             Object o;// Must be used to hold the reference of the instance of the class Solution.Inner.Private
-            o=new Inner().new Private ();
+            o=new Inner().new Private();
             ((Inner.Private) o).powerof2(num);
             System.out.println("An instance of class: " + o.getClass().getCanonicalName() + " has been created");
 
