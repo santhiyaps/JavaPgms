@@ -27,12 +27,11 @@ public class WordLadder {
                 }
             }
             count++;
-
         }
         return 0;
-
-
     }
+
+
 
     public static void main(String[] args) {
         System.out.println(new WordLadder().ladderLength("hit","cog",Arrays.asList(new String[]{"hot","dot","dog","lot","log","cog"})));
