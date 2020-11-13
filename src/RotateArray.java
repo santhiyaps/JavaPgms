@@ -1,4 +1,6 @@
 public class RotateArray {
+    String name;
+
     public static void rotateArray(int[] arr){
         int lastElement=arr[arr.length-1];
         for(int i=arr.length-1;i>0;i--){
@@ -11,6 +13,7 @@ public class RotateArray {
     }
 
     public static void main(String[] args) {
+
         int [] arr={1,2,3,4,5};
         rotateArray(arr);
         for(int i:arr){

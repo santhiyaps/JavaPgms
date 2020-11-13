@@ -79,7 +79,42 @@ class LRUCache {
         System.out.println(cache.get(4));       // returns 4
     }
 }
-
+//    String response;
+//    int startPage = 1;
+//    int totalPages = Integer.MAX_VALUE;
+//    int count=0;
+//    while (startPage <= totalPages) {
+//            try {
+//            URL obj = new URL(
+//            " https://jsonmock.hackerrank.com/api/countries/search?name=" + s + "&page=" + startPage);
+//            HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+//            con.setRequestMethod("GET");
+//            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+//            while ((response = in.readLine()) != null) {
+//            JSONParser parser = new JSONParser();
+//            JSONObject json = (JSONObject) parser.parse(response);
+//            totalPages = (int)json.get("total_pages");
+//            JSONArray data =(JSONArray)json.get("data");
+//            for (int i = 0; i < data.size(); i++) {
+//        JSONObject obj1= data.get(i);
+//        if(Integer.parseInt(population)>p){
+//        count++;
+//
+//        }
+//
+//        }
+//        }
+//        in.close();
+//        startPage++;
+//        } catch (Exception ex) {
+//        ex.printStackTrace();
+//
+//        }
+//        return 0;
+//
+//        }
+//        return count;
+//
 
 /*
 Doubly linkeddlist
