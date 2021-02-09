@@ -4,15 +4,17 @@ import java.util.List;
 
 public class MusicPairs {
     public static int getSongPairCount(List<Integer> songs) {
-        HashSet<Integer> songSet=new HashSet();
+        int result[]=new int[60];
         int count=0;
-        for(Integer i:songs){
-            if(songSet.contains(i)){
-                count++;
-            }else
-                songSet.add(60-i);
+        for(int i:songs){
+            if(i%60==0)
+                count+=result[0];
+            else
+                count+=result[60-i%60];
+            result[i%60]++;
+
         }
-      return count;
+        return count;
     }
 
     public static void main(String[] args) {
